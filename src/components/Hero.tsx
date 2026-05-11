@@ -24,7 +24,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-600 dark:text-white/70">
-            Managing Director of the Empreo Group, one of Odisha’s leading automotive and mobility conglomerates. A premium profile of his leadership, office, business empire, sustainability mission, and people-first vision.
+            Managing Director of the Samal & Empreo Group, one of Odisha’s leading automotive and mobility conglomerates. A premium profile of his leadership, office, business empire, sustainability mission, and people-first vision.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
@@ -49,7 +49,7 @@ export function Hero() {
           <figcaption className="absolute bottom-6 left-6 right-6 rounded-[2rem] border border-white/20 bg-white/10 p-5 text-white backdrop-blur-xl">
             <p className="eyebrow">Executive portrait</p>
             <h2 className="mt-2 font-serif text-3xl font-black">Dr. Abinash Samal</h2>
-            <p className="mt-2 text-sm text-white/70">Managing Director, Empreo Group. Automotive business leader, luxury mobility strategist, and sustainability advocate.</p>
+            <p className="mt-2 text-sm text-white/70">Managing Director,Samal & Empreo Group. Automotive business leader, luxury mobility strategist, and sustainability advocate.</p>
           </figcaption>
         </motion.figure>
       </div>
