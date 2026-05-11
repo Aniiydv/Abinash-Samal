@@ -8,6 +8,8 @@ import { FeatureArticle } from './sections/FeatureArticle'
 import { PortfolioSection } from './sections/PortfolioSection'
 import { SustainabilitySection } from './sections/SustainabilitySection'
 import { LegacySection } from './sections/LegacySection'
+import { GallerySection } from "./sections/GallerySection";
+import { MagazineSection } from "./sections/MagazineSection";
 import { AwardsNewsSection } from './sections/AwardsNewsSection'
 import { ContactSection } from './sections/ContactSection'
 import './index.css'

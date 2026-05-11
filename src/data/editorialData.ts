@@ -143,4 +143,61 @@ export const companyLinks = [
     type: 'Retailer page',
     href: 'https://retailers.landrover.in/empreo-prestige/about-us',
   },
+
+  
+]
+
+export const GALLERY_IMAGES = [
+  { src: "/images/gallery-1.png", caption: "Grand opening of Empreo Prestige showroom", category: "Events" },
+  { src: "/images/gallery-2.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
+  { src: "/images/gallery-3.png", caption: "Empreo Group team at annual meet", category: "Team" },
+  { src: "/images/gallery-4.png", caption: "RVSF facility, Khurda — sustainable recycling", category: "Sustainability" },
+  { src: "/images/gallery-5.png", caption: "EV charging infrastructure rollout", category: "Innovation" },
+  { src: "/images/gallery-6.png", caption: "Keynote at Odisha Mobility Summit", category: "Events" },
+  { src: "/images/empreo-service-bay.png", caption: "State-of-the-art service bay", category: "Service" },
+  { src: "/images/empreo-luxury-supercar.png", caption: "Luxury vehicle display", category: "Showroom" },
+  { src: "/images/empreo-sustainable-mobility.png", caption: "Green mobility vision", category: "Sustainability" },
+];
+
+export const MAGAZINES = [
+  {
+    id: "forbes-india-2025",
+    title: "Forbes India",
+    issue: "March 2025",
+    headline: "The Automotive King of Odisha",
+    cover: "/images/magazine-1.png",
+    excerpt: "How Dr. Abinash Samal built a ₹3,800 crore automotive empire across 20 districts of Odisha, redefining customer experience and setting new benchmarks in luxury mobility.",
+    pages: 4,
+    featured: true,
+  },
+  {
+    id: "business-today-2024",
+    title: "Business Today",
+    issue: "December 2024",
+    headline: "Driving Change: The Phygital Dealership",
+    cover: "/images/magazine-2.png",
+    excerpt: "An in-depth look at how Empreo Group's phygital approach is bridging physical showroom confidence with digital convenience across India's emerging automotive markets.",
+    pages: 3,
+    featured: true,
+  },
+  {
+    id: "entrepreneur-india-2024",
+    title: "Entrepreneur India",
+    issue: "August 2024",
+    headline: "Green Wheels: Sustainability in Auto Retail",
+    cover: "/images/magazine-3.png",
+    excerpt: "Dr. Samal's pioneering RVSF initiative and his roadmap for EV, CNG, LNG and hydrogen adoption is shaping the future of responsible mobility in Eastern India.",
+    pages: 3,
+    featured: false,
+  },
+  {
+    id: "india-today-2023",
+    title: "India Today",
+    issue: "November 2023",
+    headline: "People First: Building a 2,000-Strong Family",
+    cover: "/images/magazine-4.png",
+    excerpt: "From mediclaim to scholarships, cultural programs to skill development — how Empreo Group's employee welfare model is creating a blueprint for people-centric business leadership.",
+    pages: 2,
+    featured: false,
+  },
 ]
