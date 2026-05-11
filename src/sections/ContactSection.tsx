@@ -2,7 +2,7 @@ import { Globe2, Mail } from 'lucide-react'
 
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-charcoal px-4 py-16 text-white lg:px-8">
+    <section id="office" className="bg-charcoal px-4 py-16 text-white lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_1fr]">
         <div>
           <p className="eyebrow">Contact</p>

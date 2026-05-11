@@ -11,6 +11,9 @@ import { LegacySection } from './sections/LegacySection'
 import { GallerySection } from "./sections/GallerySection";
 import { MagazineSection } from "./sections/MagazineSection";
 import { AwardsNewsSection } from './sections/AwardsNewsSection'
+// import { MagazineDetailPage } from "./sections/MagazineDetailPage";
+// import { MagazinesListPage } from "./sections/MagazinesListPage";
+
 import { ContactSection } from './sections/ContactSection'
 import './index.css'
 
@@ -56,6 +59,10 @@ export default function App() {
         <SustainabilitySection />
         <LegacySection />
         <AwardsNewsSection />
+        <GallerySection />
+        <MagazineSection />
+        {/* <MagazineDetailPage/> */}
+        {/* <MagazinesListPage/> */}
         <EditorialIndex />
         <ContactSection />
       </main>

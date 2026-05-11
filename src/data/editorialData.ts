@@ -69,7 +69,14 @@ export const articles = [
 ]
 
 export const featureFilters = ['All', 'Scale', 'Brands', 'EV', 'Sustainability']
-export const sustainablePrograms = ['Registered Vehicle Scrapping Facility', 'EV, CNG, LNG & Hydrogen roadmap', 'DEF and cleaner diesel adoption', 'Employee welfare and scholarships']
+
+
+export const SUSTAINABILITY_ITEMS = [
+  "Registered Vehicle Scrapping Facility",
+  "EV, CNG, LNG & Hydrogen roadmap",
+  "DEF and cleaner diesel adoption",
+  "Employee welfare and scholarships",
+];
 
 export const keyHighlights = [
   'Leading the transformation of the Empreo Group across Odisha',
@@ -90,36 +97,36 @@ export const awards = [
     title: 'Odisha Mobility Leadership Recognition',
     description: 'Recognized for expanding customer-first automotive access, premium mobility experiences, and future-ready operations across Odisha.',
   },
-  {
-    year: '2024',
-    category: 'Sustainability',
-    title: 'Green Mobility Initiative Citation',
-    description: 'Acknowledged for supporting responsible vehicle recycling through the eco-friendly RVSF initiative in Khurda and promoting cleaner mobility pathways.',
-  },
-  {
-    year: '2023',
-    category: 'Workplace culture',
-    title: 'People-First Enterprise Appreciation',
-    description: 'Celebrated for employee welfare, mediclaim support, scholarships for employees’ children, and cultural initiatives that strengthen belonging.',
-  },
+  // {
+  //   year: '2024',
+  //   category: 'Sustainability',
+  //   title: 'Green Mobility Initiative Citation',
+  //   description: 'Acknowledged for supporting responsible vehicle recycling through the eco-friendly RVSF initiative in Khurda and promoting cleaner mobility pathways.',
+  // },
+  // {
+  //   year: '2023',
+  //   category: 'Workplace culture',
+  //   title: 'People-First Enterprise Appreciation',
+  //   description: 'Celebrated for employee welfare, mediclaim support, scholarships for employees’ children, and cultural initiatives that strengthen belonging.',
+  // },
 ]
 
 export const newsItems = [
   {
     date: 'March 2026',
-    title: 'Dr. Samal strengthens Empreo Group’s phygital customer experience roadmap',
-    summary: 'A leadership update focused on integrating physical dealership confidence with digital convenience across customer touchpoints.',
+    title: '“Featured in Outlook Magazine’s Visionaries of the $5 Trillion Economy”',
+    summary: 'Dr Abinash Samal was recognized for his leadership in sustainable development, industrial innovation, and social impact through the Empreo Group, contributing to inclusive growth and nation-building initiatives.',
   },
-  {
-    date: 'January 2026',
-    title: 'Empreo Group expands future mobility conversations across Odisha',
-    summary: 'The Group continues to prepare for EV, CNG, LNG, Hydrogen mobility solutions, and cleaner diesel technologies through DEF adoption.',
-  },
-  {
-    date: 'November 2025',
-    title: 'Office of Dr. Samal highlights employee welfare and education initiatives',
-    summary: 'The portfolio office reinforces its commitment to mediclaim support, scholarships, skill development, and workplace culture programs.',
-  },
+  // {
+  //   date: 'January 2026',
+  //   title: 'Empreo Group expands future mobility conversations across Odisha',
+  //   summary: 'The Group continues to prepare for EV, CNG, LNG, Hydrogen mobility solutions, and cleaner diesel technologies through DEF adoption.',
+  // },
+  // {
+  //   date: 'November 2025',
+  //   title: 'Office of Dr. Samal highlights employee welfare and education initiatives',
+  //   summary: 'The portfolio office reinforces its commitment to mediclaim support, scholarships, skill development, and workplace culture programs.',
+  // },
 ]
 
 export const companyLinks = [
@@ -148,56 +155,57 @@ export const companyLinks = [
 ]
 
 export const GALLERY_IMAGES = [
-  { src: "/images/gallery-1.png", caption: "Grand opening of Empreo Prestige showroom", category: "Events" },
-  { src: "/images/gallery-2.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
+  { src: "/images/gallery-1.jpeg", caption: "Grand opening of Empreo Prestige showroom", category: "Events" },
+  { src: "/images/gallery-2.jpeg", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
   { src: "/images/gallery-3.png", caption: "Empreo Group team at annual meet", category: "Team" },
-  { src: "/images/gallery-4.png", caption: "RVSF facility, Khurda — sustainable recycling", category: "Sustainability" },
-  { src: "/images/gallery-5.png", caption: "EV charging infrastructure rollout", category: "Innovation" },
-  { src: "/images/gallery-6.png", caption: "Keynote at Odisha Mobility Summit", category: "Events" },
+  // { src: "/images/gallery-4.jpeg", caption: "RVSF facility, Khurda — sustainable recycling", category: "Sustainability" },
+   { src: "/images/gallery-4.jpeg", caption: "Featured by Outlook Magazine: A Visionary Driving Sustainable Transformation", category: "Sustainability" },
+  { src: "/images/gallery-5.png", caption: "Outlook Magazine Highlights Dr. Abinash Samal’s Journey of Sustainable Growth", category: "Sustainability" },
+  { src: "/images/gallery-6.jpeg", caption: "Keynote at Odisha Mobility Summit", category: "Events" },
   { src: "/images/empreo-service-bay.png", caption: "State-of-the-art service bay", category: "Service" },
   { src: "/images/empreo-luxury-supercar.png", caption: "Luxury vehicle display", category: "Showroom" },
   { src: "/images/empreo-sustainable-mobility.png", caption: "Green mobility vision", category: "Sustainability" },
-];
+]
 
 export const MAGAZINES = [
   {
     id: "forbes-india-2025",
-    title: "Forbes India",
+    title: "Outlook India",
     issue: "March 2025",
-    headline: "The Automotive King of Odisha",
-    cover: "/images/magazine-1.png",
+    headline: "A Catalyst for Sustainable Change",
+    cover: "/images/magazine-1.jpeg",
     excerpt: "How Dr. Abinash Samal built a ₹3,800 crore automotive empire across 20 districts of Odisha, redefining customer experience and setting new benchmarks in luxury mobility.",
-    pages: 4,
+    pages: 1,
     featured: true,
   },
-  {
-    id: "business-today-2024",
-    title: "Business Today",
-    issue: "December 2024",
-    headline: "Driving Change: The Phygital Dealership",
-    cover: "/images/magazine-2.png",
-    excerpt: "An in-depth look at how Empreo Group's phygital approach is bridging physical showroom confidence with digital convenience across India's emerging automotive markets.",
-    pages: 3,
-    featured: true,
-  },
-  {
-    id: "entrepreneur-india-2024",
-    title: "Entrepreneur India",
-    issue: "August 2024",
-    headline: "Green Wheels: Sustainability in Auto Retail",
-    cover: "/images/magazine-3.png",
-    excerpt: "Dr. Samal's pioneering RVSF initiative and his roadmap for EV, CNG, LNG and hydrogen adoption is shaping the future of responsible mobility in Eastern India.",
-    pages: 3,
-    featured: false,
-  },
-  {
-    id: "india-today-2023",
-    title: "India Today",
-    issue: "November 2023",
-    headline: "People First: Building a 2,000-Strong Family",
-    cover: "/images/magazine-4.png",
-    excerpt: "From mediclaim to scholarships, cultural programs to skill development — how Empreo Group's employee welfare model is creating a blueprint for people-centric business leadership.",
-    pages: 2,
-    featured: false,
-  },
+  // {
+  //   id: "business-today-2024",
+  //   title: "Business Today",
+  //   issue: "December 2024",
+  //   headline: "Driving Change: The Phygital Dealership",
+  //   cover: "/images/magazine-2.png",
+  //   excerpt: "An in-depth look at how Empreo Group's phygital approach is bridging physical showroom confidence with digital convenience across India's emerging automotive markets.",
+  //   pages: 3,
+  //   featured: true,
+  // },
+  // {
+  //   id: "entrepreneur-india-2024",
+  //   title: "Entrepreneur India",
+  //   issue: "August 2024",
+  //   headline: "Green Wheels: Sustainability in Auto Retail",
+  //   cover: "/images/magazine-3.png",
+  //   excerpt: "Dr. Samal's pioneering RVSF initiative and his roadmap for EV, CNG, LNG and hydrogen adoption is shaping the future of responsible mobility in Eastern India.",
+  //   pages: 3,
+  //   featured: false,
+  // },
+  // {
+  //   id: "india-today-2023",
+  //   title: "India Today",
+  //   issue: "November 2023",
+  //   headline: "People First: Building a 2,000-Strong Family",
+  //   cover: "/images/magazine-4.png",
+  //   excerpt: "From mediclaim to scholarships, cultural programs to skill development — how Empreo Group's employee welfare model is creating a blueprint for people-centric business leadership.",
+  //   pages: 2,
+  //   featured: false,
+  // },
 ]
