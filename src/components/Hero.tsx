@@ -15,23 +15,23 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_.95fr]">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="pb-16">
           <div className="mb-8 flex flex-wrap items-center gap-3">
-            <span className="rounded-full bg-gold px-4 py-2 text-xs font-black uppercase tracking-[.22em] text-navy">Special feature</span>
-            <span className="text-sm font-bold uppercase tracking-[.22em] text-slate-500 dark:text-white/60">Odisha • Mobility • Legacy</span>
+            <span className="rounded-full bg-gold px-4 py-2 text-xs font-black uppercase tracking-[.22em] text-navy">Executive portfolio</span>
+            <span className="text-sm font-bold uppercase tracking-[.22em] text-slate-500 dark:text-white/60">Managing Director • Samal & Empreo</span>
           </div>
 
           <h1 className="font-serif text-6xl font-black leading-[.86] tracking-[-.06em] md:text-8xl xl:text-[8.8rem]">
-            Dr. Abinash Samal & the Empreo ascent.
+            Dr. Abinash Samal.
           </h1>
 
           <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-600 dark:text-white/70">
-            A premium editorial feature on the journey from humble service bays to luxury supercars and sustainable mobility leadership in Odisha.
+            Managing Director of Samal & Empreo. A premium profile of his office, leadership journey, automotive business empire, luxury mobility vision, and trusted presence in Odisha.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
-            <a className="gold-btn" href="#feature">
-              Read feature <ChevronRight size={18} />
+            <a className="gold-btn" href="#profile">
+              View profile <ChevronRight size={18} />
             </a>
-            <a className="ghost-btn" href="#journey">View timeline</a>
+            <a className="ghost-btn" href="#companies">Business empire</a>
           </div>
         </motion.div>
 
@@ -42,14 +42,14 @@ export function Hero() {
         >
           <img
             src="/images/dr-abinash-samal-editorial.png"
-            alt="Polished editorial portrait of Dr. Abinash Samal"
+            alt="Polished executive portrait of Dr. Abinash Samal"
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent" />
           <figcaption className="absolute bottom-6 left-6 right-6 rounded-[2rem] border border-white/20 bg-white/10 p-5 text-white backdrop-blur-xl">
-            <p className="eyebrow">Cover portrait</p>
-            <h2 className="mt-2 font-serif text-3xl font-black">Founder, Empreo Group</h2>
-            <p className="mt-2 text-sm text-white/70">Automotive service culture, luxury ownership, and clean mobility vision.</p>
+            <p className="eyebrow">Executive portrait</p>
+            <h2 className="mt-2 font-serif text-3xl font-black">Dr. Abinash Samal</h2>
+            <p className="mt-2 text-sm text-white/70">Managing Director of Samal & Empreo. Business leader, luxury mobility strategist, and clean mobility advocate.</p>
           </figcaption>
         </motion.figure>
       </div>
