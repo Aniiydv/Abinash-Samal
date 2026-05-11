@@ -56,7 +56,7 @@ export const principles: Principle[] = [
 export const sideNotes = [
   'Dr. Abinash Samal',
   'Managing Director',
-  'Empreo Group',
+  'Samal & Empreo Group',
   '50+ branches in Odisha',
   '₹3,800 crore turnover',
   '2,000+ professionals',

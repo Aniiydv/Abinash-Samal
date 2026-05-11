@@ -19,7 +19,7 @@ export function Hero() {
             <span className="text-sm font-bold uppercase tracking-[.22em] text-slate-500 dark:text-white/60">Managing Director • Empreo Group</span>
           </div>
 
-          <h1 className="font-serif text-6xl font-black leading-[.86] tracking-[-.06em] md:text-8xl xl:text-[8.8rem]">
+          <h1 className="font-serif text-6xl font-black leading-[.86] tracking-[-.06em] md:text-8xl xl:text-[6.8rem]">
             Dr. Abinash Samal.
           </h1>
 
