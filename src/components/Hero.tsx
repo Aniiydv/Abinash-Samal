@@ -16,7 +16,7 @@ export function Hero() {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="pb-16">
           <div className="mb-8 flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-gold px-4 py-2 text-xs font-black uppercase tracking-[.22em] text-navy">Executive portfolio</span>
-            <span className="text-sm font-bold uppercase tracking-[.22em] text-slate-500 dark:text-white/60">Managing Director • Samal & Empreo</span>
+            <span className="text-sm font-bold uppercase tracking-[.22em] text-slate-500 dark:text-white/60">Managing Director • Empreo Group</span>
           </div>
 
           <h1 className="font-serif text-6xl font-black leading-[.86] tracking-[-.06em] md:text-8xl xl:text-[8.8rem]">
@@ -24,7 +24,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-8 max-w-2xl text-xl leading-9 text-slate-600 dark:text-white/70">
-            Managing Director of Samal & Empreo. A premium profile of his office, leadership journey, automotive business empire, luxury mobility vision, and trusted presence in Odisha.
+            Managing Director of the Empreo Group, one of Odisha’s leading automotive and mobility conglomerates. A premium profile of his leadership, office, business empire, sustainability mission, and people-first vision.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
@@ -49,7 +49,7 @@ export function Hero() {
           <figcaption className="absolute bottom-6 left-6 right-6 rounded-[2rem] border border-white/20 bg-white/10 p-5 text-white backdrop-blur-xl">
             <p className="eyebrow">Executive portrait</p>
             <h2 className="mt-2 font-serif text-3xl font-black">Dr. Abinash Samal</h2>
-            <p className="mt-2 text-sm text-white/70">Managing Director of Samal & Empreo. Business leader, luxury mobility strategist, and clean mobility advocate.</p>
+            <p className="mt-2 text-sm text-white/70">Managing Director, Empreo Group. Automotive business leader, luxury mobility strategist, and sustainability advocate.</p>
           </figcaption>
         </motion.figure>
       </div>

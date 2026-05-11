@@ -1,6 +1,7 @@
 import { featureFilters, features } from '../data/editorialData'
 import { FeatureCard } from '../components/FeatureCard'
 import { SectionHead } from '../components/SectionHead'
+import { ExternalLink } from 'lucide-react'
 
 type PortfolioSectionProps = {
   activeFilter: string
@@ -13,11 +14,11 @@ export function PortfolioSection({ activeFilter, onFilterChange }: PortfolioSect
     : features.filter((feature) => feature.tags.includes(activeFilter) || feature.title.includes(activeFilter))
 
   return (
-    <section id="luxury" className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
+    <section id="companies" className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
       <SectionHead
-        kicker="Portfolio"
-        title="Luxury, service, and clean mobility in one frame"
-        intro="Filter the editorial modules to explore Empreo’s core themes."
+        kicker="Business empire"
+        title="The business empire led by Dr. Samal"
+        intro="A focused view of Empreo Group’s scale, automotive brand presence, sustainability initiatives, and customer-first transformation under his executive direction."
       />
 
       <div className="mt-8 flex flex-wrap gap-2">
@@ -32,6 +33,12 @@ export function PortfolioSection({ activeFilter, onFilterChange }: PortfolioSect
         {filteredFeatures.map((feature) => (
           <FeatureCard key={feature.title} feature={feature} />
         ))}
+      </div>
+
+      <div className="mt-8 text-center">
+        <a href="https://emprogroup.vercel.app/" target="_blank" rel="noreferrer" className="gold-btn">
+          Visit Empreo Group website <ExternalLink size={18} />
+        </a>
       </div>
     </section>
   )

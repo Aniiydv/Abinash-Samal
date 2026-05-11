@@ -8,7 +8,7 @@ export function PullQuote() {
       <blockquote className="my-10 border-y border-gold/50 py-8">
         <Quote className="text-gold" />
         <p className="mt-4 font-serif text-4xl font-black leading-tight">
-          Odisha does not have to import aspiration. It can build it, service it, and make it sustainable.
+          Growth is strongest when enterprise, people, technology, and responsibility move together.
         </p>
       </blockquote>
     </Reveal>
@@ -18,10 +18,10 @@ export function PullQuote() {
 export function IssueCard() {
   return (
     <div className="glass-card p-6">
-      <p className="eyebrow">Magazine issue</p>
-      <h3 className="mt-3 font-serif text-3xl font-black">Ambition, tuned precisely.</h3>
+            <p className="eyebrow">Profile snapshot</p>
+            <h3 className="mt-3 font-serif text-3xl font-black">Dr. Samal at a glance.</h3>
       <div className="mt-6 grid grid-cols-2 gap-3 text-center">
-        {['Legacy', 'Luxury', 'EV', 'Odisha'].map((item) => (
+        {['50+ branches', '20 districts', '₹3,800 Cr', '2,000+ people'].map((item) => (
           <span className="rounded-2xl bg-gold/10 p-3 text-sm font-black text-gold" key={item}>{item}</span>
         ))}
       </div>
@@ -49,11 +49,11 @@ export function EditorialIndex() {
       <div className="grid gap-6 lg:grid-cols-[1fr_.8fr]">
         <Reveal>
           <div className="glass-card p-8">
-            <p className="eyebrow">Editorial index</p>
-            <h2 className="mt-3 font-serif text-4xl font-black">More from the Empreo mobility desk</h2>
+            <p className="eyebrow">Profile index</p>
+            <h2 className="mt-3 font-serif text-4xl font-black">More on Dr. Samal’s profile</h2>
             <div className="mt-6 grid gap-3">
               {articles.map((article) => (
-                <a key={article} href="#feature" className="group flex items-center justify-between rounded-2xl border border-black/10 p-4 font-bold hover:border-gold dark:border-white/10">
+                <a key={article} href="#profile" className="group flex items-center justify-between rounded-2xl border border-black/10 p-4 font-bold hover:border-gold dark:border-white/10">
                   <span>{article}</span>
                   <ChevronRight className="transition group-hover:translate-x-1" />
                 </a>
@@ -66,9 +66,9 @@ export function EditorialIndex() {
           <div className="glass-card p-8">
             <Quote className="text-gold" />
             <p className="mt-5 font-serif text-3xl font-bold leading-tight">
-              “The dream car is only the visible part. The invisible part is service integrity.”
+              “Business growth should create progress for customers, employees, communities, and the future of mobility.”
             </p>
-            <p className="mt-4 text-slate-500">— Dr. Abinash Samal, Founder, Empreo Group</p>
+            <p className="mt-4 text-slate-500">— Dr. Abinash Samal</p>
           </div>
         </Reveal>
       </div>

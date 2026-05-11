@@ -21,8 +21,8 @@ export function Header({ dark, menuOpen, query, searchResults, onToggleTheme, on
             <Car size={21} />
           </span>
           <span>
-            <span className="block font-serif text-xl font-black leading-none">Empreo</span>
-            <span className="text-[10px] font-bold uppercase tracking-[.34em] text-gold">Editorial feature</span>
+            <span className="block font-serif text-xl font-black leading-none">Dr. Abinash Samal</span>
+            <span className="text-[10px] font-bold uppercase tracking-[.34em] text-gold">Portfolio profile</span>
           </span>
         </a>
 
@@ -70,7 +70,7 @@ export function Header({ dark, menuOpen, query, searchResults, onToggleTheme, on
         <div className="absolute right-4 top-20 w-[min(92vw,420px)] rounded-3xl border border-gold/30 bg-white p-4 shadow-2xl dark:bg-navy">
           <p className="eyebrow">Search results</p>
           {searchResults.map((result) => (
-            <a key={result} href="#feature" className="mt-2 block rounded-2xl bg-black/5 p-3 dark:bg-white/10">
+            <a key={result} href="#profile" className="mt-2 block rounded-2xl bg-black/5 p-3 dark:bg-white/10">
               {result}
             </a>
           ))}
