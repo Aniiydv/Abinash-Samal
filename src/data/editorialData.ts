@@ -126,7 +126,7 @@ export const companyLinks = [
   {
     label: 'Empreo Group',
     type: 'Official website',
-    href: 'https://www.empreogroup.in/',
+    href: 'https://emprogroup.vercel.app/',
   },
   {
     label: 'Empreo Škoda',
