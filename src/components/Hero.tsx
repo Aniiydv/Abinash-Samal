@@ -70,9 +70,9 @@ import { ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const images = [
-  "/images/dr-abinash-samal-editorial.png",
-  "/images/dr-abinash-samal-2.jpeg",
-  "/images/dr-abinash-samal-3.png",
+  "/images/main profile-1.png",
+  "/images/main profile-2.png",
+  // "/images/dr-abinash-samal-3.png",
   // "/images/dr-abinash-samal-4.jpg",
 ];
 
