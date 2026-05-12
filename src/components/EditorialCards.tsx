@@ -66,7 +66,7 @@ export function EditorialIndex() {
           <div className="glass-card p-8">
             <Quote className="text-gold" />
             <p className="mt-5 font-serif text-3xl font-bold leading-tight">
-              “Business growth should create progress for customers, employees, communities, and the future of mobility.”
+              “Every milestone we’ve achieved is a testament to our journey, our people, and your unwavering trust in Empreo Group.”
             </p>
             <p className="mt-4 text-slate-500">— Dr. Abinash Samal</p>
           </div>
