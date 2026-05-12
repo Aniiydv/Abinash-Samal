@@ -55,7 +55,7 @@ export default function App() {
       <main id="top">
         <Hero />
         <FeatureArticle />
-        <PortfolioSection activeFilter={activeFilter} onFilterChange={setActiveFilter} />
+        <PortfolioSection  />
         <SustainabilitySection />
         <LegacySection />
         <AwardsNewsSection />

@@ -14,12 +14,32 @@ const socials = [
 
 // Replace these with your real brand logo paths
 const brands = [
-  { name: "Empreo Group", logo: "/brands/empreo.png" },
-  { name: "Samal Automotive", logo: "/brands/samal-auto.png" },
-  { name: "Empreo Mobility", logo: "/brands/mobility.png" },
-  { name: "Empreo Luxury Cars", logo: "/brands/luxury-cars.png" },
-  { name: "Empreo Sustainability", logo: "/brands/sustainability.png" },
-];
+  {
+    name: "Škoda",
+    logo: "https://cdn.simpleicons.org/skoda",
+  },
+  {
+    name: "MG",
+    logo: "https://cdn.simpleicons.org/mg",
+  },
+  {
+    name: "Land Rover",
+    logo: "https://cdn.worldvectorlogo.com/logos/land-rover-1.svg",
+  },
+ 
+  {
+    name: "Kia",
+    logo: "https://cdn.worldvectorlogo.com/logos/kia-2021.svg",
+  },
+  {
+    name: "Tata",
+    logo: "https://cdn.simpleicons.org/tata",
+  },
+  {
+    name: "JCB",
+    logo: "https://cdn.simpleicons.org/jcb",
+  },
+]
 
 export function ContactSection() {
   return (
@@ -77,19 +97,19 @@ export function ContactSection() {
 
             <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
 
-              {brands.map((brand, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.05 }}
-                  className="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition hover:border-gold"
-                >
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="h-12 w-auto object-contain opacity-80 hover:opacity-100 transition"
-                  />
-                </motion.div>
-              ))}
+             {brands.map((brand, i) => (
+                    <motion.div
+                      key={i}
+                      whileHover={{ scale: 1.05 }}
+                      className="group flex h-32 items-center justify-center rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-500 hover:border-[#D4AF37] hover:bg-white/[0.06]"
+                    >
+                     <img
+                        src={brand.logo}
+                        alt={brand.name}
+                        className="max-h-12 w-auto object-contain opacity-70 grayscale brightness-200 transition duration-500 group-hover:opacity-100 group-hover:grayscale-0"
+                      />
+                    </motion.div>
+                  ))}
 
             </div>
           </div>
@@ -105,7 +125,7 @@ export function ContactSection() {
           </div>
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18..."
+            src="https://maps.app.goo.gl/3CFTszUBP54s7nAf6?g_st=ic"
             width="100%"
             height="520"
             loading="lazy"
