@@ -126,14 +126,14 @@ export function ContactSection() {
 
           
           <iframe
-              src="https://maps.app.goo.gl/3CFTszUBP54s7nAf6?g_st=ic"
-              width="100%"
-              height="520"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="grayscale hover:grayscale-0 transition"
-              allowFullScreen
-            />
+  src="https://www.google.com/maps?q=20.3519194,85.8909893&z=17&output=embed"
+  width="100%"
+  height="520"
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="grayscale hover:grayscale-0 transition"
+  allowFullScreen
+/>
         </div>
 
       </div>
