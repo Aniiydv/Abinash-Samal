@@ -155,7 +155,7 @@ export const companyLinks = [
 ]
 
 export const GALLERY_IMAGES = [
-  { src: "/images/gallery-1.jpeg", caption: "Grand opening of Empreo Prestige showroom", category: "Events" },
+  // { src: "/images/gallery-1.jpeg", caption: "Grand opening of Empreo Prestige showroom", category: "Events" },
   { src: "/images/KIA.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
    { src: "/images/LR.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
     { src: "/images/MG.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
@@ -164,15 +164,15 @@ export const GALLERY_IMAGES = [
        { src: "/images/TATA.png", caption: "Luxury vehicle display", category: "Showroom" },
   { src: "/images/tata 3.png", caption: "Empreo Group team at annual meet", category: "Team" },
   // { src: "/images/gallery-4.jpeg", caption: "RVSF facility, Khurda — sustainable recycling", category: "Sustainability" },
-   { src: "/images/gallery-4.jpeg", caption: "Featured by Outlook Magazine: A Visionary Driving Sustainable Transformation", category: "Sustainability" },
-  { src: "/images/gallery-5.png", caption: "Outlook Magazine Highlights Dr. Abinash Samal’s Journey of Sustainable Growth", category: "Sustainability" },
-  { src: "/images/gallery-6.jpeg", caption: "Keynote at Odisha Mobility Summit", category: "Events" },
+  //  { src: "/images/gallery-4.jpeg", caption: "Featured by Outlook Magazine: A Visionary Driving Sustainable Transformation", category: "Sustainability" },
+  // { src: "/images/gallery-5.png", caption: "Outlook Magazine Highlights Dr. Abinash Samal’s Journey of Sustainable Growth", category: "Sustainability" },
+  // { src: "/images/gallery-6.jpeg", caption: "Keynote at Odisha Mobility Summit", category: "Events" },
   { src: "/images/KIA SERVICE.png", caption: "State-of-the-art service bay", category: "Service" },
   { src: "/images/MG WORKSHOP.png", caption: "State-of-the-art service bay", category: "Service" },
   { src: "/images/C9888T01.png", caption: "State-of-the-art service bay", category: "Service" },
   { src: "/images/C9944T01.png", caption: "State-of-the-art service bay", category: "Service" },
  
-  { src: "/images/empreo-sustainable-mobility.png", caption: "Green mobility vision", category: "Sustainability" },
+  // { src: "/images/empreo-sustainable-mobility.png", caption: "Green mobility vision", category: "Sustainability" },
 ]
 
 export const MAGAZINES = [

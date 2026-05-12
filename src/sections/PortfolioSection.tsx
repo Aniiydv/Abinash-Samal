@@ -53,8 +53,8 @@ export function PortfolioSection() {
     <section id="companies" className="bg-black text-white">
 
       {/* HEADER CONTENT */}
-      <div className="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-14 text-center">
-        
+      
+        <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-6 pt-28 text-center gap-6">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -103,29 +103,28 @@ export function PortfolioSection() {
       </div>
 
       {/* FULLSCREEN VIDEO */}
-      <div className="relative h-screen overflow-hidden">
+      <div className="relative h-[100dvh] w-full overflow-hidden">
 
-        {/* VIDEO */}
-        <div className="absolute inset-0 animate-slowZoom">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="h-full w-full object-cover"
-          >
-            <source
-              src="/videos/empreo-showcase.mp4"
-              type="video/mp4"
-            />
-          </video>
+          {/* VIDEO */}
+          <div className="absolute inset-0 animate-slowZoom">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-contain md:object-cover"
+            >
+              <source src="/videos/empreo-showcase.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          {/* GRADIENTS */}
+          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent" />
+          
         </div>
 
-        {/* CINEMATIC GRADIENTS */}
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-black to-transparent" />
-
-      </div>
+      
     </section>
   )
 }

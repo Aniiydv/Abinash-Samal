@@ -11,34 +11,13 @@ const socials = [
   { icon: Instagram, link: "https://instagram.com" },
   { icon: Facebook, link: "https://facebook.com" },
 ];
-
-// Replace these with your real brand logo paths
 const brands = [
-  {
-    name: "Škoda",
-    logo: "https://cdn.simpleicons.org/skoda",
-  },
-  {
-    name: "MG",
-    logo: "https://cdn.simpleicons.org/mg",
-  },
-  {
-    name: "Land Rover",
-    logo: "https://cdn.worldvectorlogo.com/logos/land-rover-1.svg",
-  },
- 
-  {
-    name: "Kia",
-    logo: "https://cdn.worldvectorlogo.com/logos/kia-2021.svg",
-  },
-  {
-    name: "Tata",
-    logo: "https://cdn.simpleicons.org/tata",
-  },
-  {
-    name: "JCB",
-    logo: "https://cdn.simpleicons.org/jcb",
-  },
+  { name: "Škoda", logo: "/images/skodalogo.jpeg" },
+  { name: "MG", logo: "/images/MG-Logo-1952.png" },
+  { name: "Land Rover", logo: "/images/land-rover.svg" },
+  { name: "Kia", logo: "/images/kia.svg" },
+  { name: "Tata Motors", logo: "/images/tatacomricial.jpeg" },
+  { name: "JCB", logo: "/images/JCB-Logo 2.png" },
 ]
 
 export function ContactSection() {
@@ -99,16 +78,26 @@ export function ContactSection() {
 
              {brands.map((brand, i) => (
                     <motion.div
-                      key={i}
-                      whileHover={{ scale: 1.05 }}
-                      className="group flex h-32 items-center justify-center rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition duration-500 hover:border-[#D4AF37] hover:bg-white/[0.06]"
-                    >
-                     <img
-                        src={brand.logo}
-                        alt={brand.name}
-                        className="max-h-12 w-auto object-contain opacity-70 grayscale brightness-200 transition duration-500 group-hover:opacity-100 group-hover:grayscale-0"
-                      />
-                    </motion.div>
+                        key={i}
+                        whileHover={{ scale: 1.08 }}
+                        className="group relative flex h-32 items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-500 hover:border-[#D4AF37] hover:bg-white/[0.08] hover:shadow-[0_0_25px_rgba(212,175,55,0.15)]"
+                      >
+                        {/* glow effect */}
+                        <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-gradient-to-r from-[#D4AF37]/10 via-transparent to-[#D4AF37]/10" />
+
+                        <img
+                            src={brand.logo}
+                            alt={brand.name}
+                            onError={(e) => {
+                              e.currentTarget.src =
+                                "https://via.placeholder.com/120x40?text=" + brand.name
+                            }}
+                            className="max-h-10 w-auto object-contain opacity-60 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+                          />
+
+                        {/* subtle border glow ring */}
+                        <div className="absolute inset-0 rounded-3xl opacity-0 transition duration-500 group-hover:opacity-100 ring-1 ring-[#D4AF37]/30" />
+                      </motion.div>
                   ))}
 
             </div>
