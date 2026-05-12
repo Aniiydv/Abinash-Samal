@@ -124,14 +124,16 @@ export function ContactSection() {
             </p>
           </div>
 
+          
           <iframe
-            src="https://maps.app.goo.gl/3CFTszUBP54s7nAf6?g_st=ic"
-            width="100%"
-            height="520"
-            loading="lazy"
-            className="grayscale"
-            allowFullScreen
-          />
+              src="https://maps.app.goo.gl/3CFTszUBP54s7nAf6?g_st=ic"
+              width="100%"
+              height="520"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="grayscale hover:grayscale-0 transition"
+              allowFullScreen
+            />
         </div>
 
       </div>
