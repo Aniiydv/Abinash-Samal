@@ -1,130 +1,108 @@
 'use client'
 
 import { motion } from 'framer-motion'
-
-import { featureFilters, features } from '../data/editorialData'
-import { FeatureCard } from '../components/FeatureCard'
-import { SectionHead } from '../components/SectionHead'
 import { ExternalLink } from 'lucide-react'
-
-type PortfolioSectionProps = {
-  activeFilter: string
-  onFilterChange: (filter: string) => void
-}
-
-// export function PortfolioSection({ activeFilter, onFilterChange }: PortfolioSectionProps) {
-//   const filteredFeatures = activeFilter === 'All'
-//     ? features
-//     : features.filter((feature) => feature.tags.includes(activeFilter) || feature.title.includes(activeFilter))
-
-//   return (
-//     <section id="companies" className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
-//       <SectionHead
-//         kicker="Business empire"
-//         title="The business empire led by Dr. Samal"
-//         intro="A focused view of Empreo Group’s scale, automotive brand presence, sustainability initiatives, and customer-first transformation under his executive direction."
-//       />
-
-//       <div className="mt-8 flex flex-wrap gap-2">
-//         {featureFilters.map((filter) => (
-//           <button key={filter} onClick={() => onFilterChange(filter)} className={`chip ${activeFilter === filter ? 'chip-active' : ''}`}>
-//             {filter}
-//           </button>
-//         ))}
-//       </div>
-
-//       <div className="mt-8 grid gap-6 lg:grid-cols-3">
-//         {filteredFeatures.map((feature) => (
-//           <FeatureCard key={feature.title} feature={feature} />
-//         ))}
-//       </div>
-
-//       <div className="mt-8 text-center">
-//         <a href="https://emprogroup.vercel.app/" target="_blank" rel="noreferrer" className="gold-btn">
-//           Visit Empreo Group website <ExternalLink size={18} />
-//         </a>
-//       </div>
-//     </section>
-//   )
-// }
 
 export function PortfolioSection() {
   return (
-    <section id="companies" className="bg-black text-white">
+    <section
+      id="companies"
+      className="relative overflow-hidden bg-black py-24 text-white"
+    >
+      <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:px-10">
 
-      {/* HEADER CONTENT */}
-      
-        <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-6 pt-28 text-center gap-6">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-4 text-sm uppercase tracking-[0.45em] text-[#D4AF37]"
-        >
-          Business Empire
-        </motion.p>
-
-        <motion.h2
+        {/* LEFT CONTENT */}
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-5xl font-bold leading-tight md:text-7xl"
+          transition={{ duration: 0.9 }}
+          className="relative z-10"
         >
-          The business empire <br />
-          led by Dr. Samal
-        </motion.h2>
+          <p className="mb-4 text-sm uppercase tracking-[0.45em] text-[#D4AF37]">
+            Business Empire
+          </p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2 }}
-          className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-neutral-300"
-        >
-          Empreo Group has emerged as one of Odisha’s leading automotive
-          conglomerates spanning luxury, commercial, and sustainable mobility
-          sectors with a strong customer-first vision.
-        </motion.p>
+          <h2 className="text-4xl font-bold leading-tight md:text-6xl">
+            The business empire
+            <br />
+            led by Dr. Samal
+          </h2>
 
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.4 }}
-          className="mt-10"
-        >
-          <a
-            href="https://emprogroup.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="gold-btn inline-flex items-center gap-2"
-          >
-            Visit Empreo Group Website
-          </a>
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-300">
+            Empreo Group has emerged as one of Odisha’s leading automotive
+            conglomerates spanning luxury, commercial, and sustainable mobility
+            sectors with a strong customer-first vision and premium brand
+            partnerships.
+          </p>
+
+          {/* STATS */}
+          <div className="mt-10 grid grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+              <h3 className="text-3xl font-bold text-[#D4AF37]">20+</h3>
+              <p className="mt-2 text-sm text-neutral-400">
+                Years of Leadership
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+              <h3 className="text-3xl font-bold text-[#D4AF37]">15+</h3>
+              <p className="mt-2 text-sm text-neutral-400">
+                Automotive Ventures
+              </p>
+            </div>
+          </div>
+
+          {/* BUTTON */}
+          <div className="mt-10">
+            <a
+              href="https://emprogroup.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="gold-btn inline-flex items-center gap-2"
+            >
+              Visit Empreo Group Website
+              <ExternalLink size={18} />
+            </a>
+          </div>
         </motion.div>
-      </div>
 
-      {/* FULLSCREEN VIDEO */}
-      <div className="relative h-[100dvh] w-full overflow-hidden">
+        {/* RIGHT VIDEO FRAME */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="relative"
+        >
+          {/* GLOW */}
+          <div className="absolute -inset-4 rounded-[2rem] bg-[#D4AF37]/10 blur-3xl" />
 
-          {/* VIDEO */}
-          <div className="absolute inset-0 animate-slowZoom">
+          {/* FRAME */}
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-md">
+
+            {/* TOP BAR */}
+            <div className="flex items-center gap-2 border-b border-white/10 px-5 py-4">
+              <div className="h-3 w-3 rounded-full bg-red-500" />
+              <div className="h-3 w-3 rounded-full bg-yellow-500" />
+              <div className="h-3 w-3 rounded-full bg-green-500" />
+            </div>
+
+            {/* VIDEO */}
             <video
               autoPlay
               muted
               loop
               playsInline
-              className="h-full w-full object-contain md:object-cover"
+              preload="metadata"
+              className="aspect-video w-full object-cover"
             >
-              <source src="/videos/empreo-showcase.mp4" type="video/mp4" />
+              <source
+                src="/videos/empreo-showcase.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
-
-          {/* GRADIENTS */}
-          <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent" />
-          
-        </div>
-
-      
+        </motion.div>
+      </div>
     </section>
   )
 }
