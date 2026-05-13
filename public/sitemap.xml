@@ -1,14 +1,9 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-Sitemap: https://drabinashsamal.com/sitemap.xml
+  <url>
+    <loc>https://abinashsamal.com/</loc>
+    <priority>1.0</priority>
+  </url>
 
-# Crawl-delay for heavy crawlers
-User-agent: AhrefsBot
-Crawl-delay: 2
-
-User-agent: SemrushBot
-Crawl-delay: 2
+</urlset>
