@@ -80,7 +80,7 @@ export function ContactSection() {
                     <motion.div
                         key={i}
                         whileHover={{ scale: 1.08 }}
-                        className="group relative flex h-32 items-center justify-center overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 transition-all duration-500 hover:border-[#D4AF37] hover:bg-white/[0.08] hover:shadow-[0_0_25px_rgba(212,175,55,0.15)]"
+                       className="group relative flex h-32 items-center justify-center overflow-hidden rounded-3xl border border-gray-200 bg-white p-8 transition-all duration-500 hover:border-[#D4AF37] hover:shadow-[0_0_25px_rgba(212,175,55,0.15)]"
                       >
                         {/* glow effect */}
                         <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-gradient-to-r from-[#D4AF37]/10 via-transparent to-[#D4AF37]/10" />
@@ -92,7 +92,7 @@ export function ContactSection() {
                               e.currentTarget.src =
                                 "https://via.placeholder.com/120x40?text=" + brand.name
                             }}
-                            className="max-h-10 w-auto object-contain opacity-60 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+                           className="max-h-10 w-auto object-contain transition duration-300 group-hover:scale-105"
                           />
 
                         {/* subtle border glow ring */}

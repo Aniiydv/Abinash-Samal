@@ -159,7 +159,7 @@ export const GALLERY_IMAGES = [
   { src: "/images/KIA.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
    { src: "/images/LR.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
     { src: "/images/MG.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
-     { src: "/images/SKODA.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
+    //  { src: "/images/SKODA.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
       { src: "/images/SKODA_SHOWROOM.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
        { src: "/images/TATA.png", caption: "Luxury vehicle display", category: "Showroom" },
   { src: "/images/tata 3.png", caption: "Empreo Group team at annual meet", category: "Team" },
