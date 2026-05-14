@@ -25,7 +25,7 @@ export function PortfolioSection() {
           <h2 className="text-4xl font-bold leading-tight md:text-6xl">
             The business empire
             <br />
-            led by Dr. Samal
+            led by Empreo Group.
           </h2>
 
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-300">
