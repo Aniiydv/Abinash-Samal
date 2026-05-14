@@ -7,17 +7,18 @@ import {
 import { motion } from "framer-motion";
 
 const socials = [
-  { icon: Linkedin, link: "https://linkedin.com" },
-  { icon: Instagram, link: "https://instagram.com" },
-  { icon: Facebook, link: "https://facebook.com" },
+  // { icon: Linkedin, link: "https://www.instagram.com/abinash___samal" },
+  { icon: Instagram, link: "https://www.instagram.com/abinash___samal" },
+  { icon: Facebook, link: "https://www.facebook.com/share/17dgDzuaoP/?mibextid=wwXIfr" },
 ];
+
 const brands = [
-  { name: "Škoda", logo: "/images/skodalogo.jpeg" },
-  { name: "MG", logo: "/images/MG-Logo-1952.png" },
-  { name: "Land Rover", logo: "/images/land-rover.svg" },
-  { name: "Kia", logo: "/images/kia.svg" },
-  { name: "Tata Motors", logo: "/images/tatacomricial.jpeg" },
-  { name: "JCB", logo: "/images/JCB-Logo 2.png" },
+  { name: 'Skoda', logo: '/images/skoda.webp' },
+  { name: 'MG', logo: '/images/mglogo.webp' },
+  { name: 'Land Rover', logo: '/images/land-rover.webp' },
+  { name: 'Kia', logo: '/images/kialogo.webp' },
+  { name: 'Tata Motors', logo: '/images/tatacomricial.webp' },
+  { name: 'JCB', logo: '/images/jcb.webp' },
 ]
 
 export function ContactSection() {
@@ -105,24 +106,26 @@ export function ContactSection() {
         </div>
 
         {/* ================= RIGHT SIDE MAP ================= */}
-        <div className="overflow-hidden rounded-[2.5rem] border border-white/10">
+      <div className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/5 backdrop-blur-xl">
 
-          <div className="border-b border-white/10 bg-white/5 px-6 py-4">
-            <p className="text-sm font-semibold">
+          {/* HEADER */}
+          <div className="border-b border-white/10 px-6 py-4">
+            <p className="text-sm font-semibold tracking-wide text-white/90">
               Empreo Group Office — Odisha, India
             </p>
           </div>
 
-          
+          {/* MAP */}
           <iframe
-  src="https://www.google.com/maps?q=20.3519194,85.8909893&z=17&output=embed"
-  width="100%"
-  height="520"
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-  className="grayscale hover:grayscale-0 transition"
-  allowFullScreen
-/>
+            title="Empreo Group Office Location Map"
+            src="https://www.google.com/maps?q=20.3519194,85.8909893&z=17&output=embed"
+            width="100%"
+            height="520"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="h-[520px] w-full grayscale transition duration-700 hover:grayscale-0"
+            allowFullScreen
+          />
         </div>
 
       </div>

@@ -4,54 +4,173 @@
 
 :root {
   color-scheme: light dark;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
   --navy: #07152f;
   --gold: #d4af37;
   --charcoal: #141820;
 }
 
-html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #05070c;
+}
 
 @theme {
   --color-navy: #07152f;
   --color-gold: #d4af37;
   --color-charcoal: #141820;
-  --font-serif: Georgia, Cambria, "Times New Roman", serif;
-  --shadow-glow: 0 24px 80px rgba(212,175,55,.22);
+
+  --font-serif:
+    Georgia,
+    Cambria,
+    "Times New Roman",
+    serif;
+
+  --shadow-glow:
+    0 24px 80px rgba(212, 175, 55, .22);
 }
 
 @layer components {
-  .glass-card { @apply rounded-[2rem] border border-slate-200/80 bg-white/70 shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20; }
-  .gold-btn { @apply inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-bold text-navy shadow-glow transition hover:-translate-y-0.5 hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-gold/30; }
-  .ghost-btn { @apply inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white/50 px-6 py-3 text-sm font-bold text-slate-900 transition hover:-translate-y-0.5 hover:border-gold dark:border-white/15 dark:bg-white/5 dark:text-white; }
-  .icon-btn { @apply grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white/70 text-slate-900 transition hover:border-gold hover:text-gold dark:border-white/10 dark:bg-white/10 dark:text-white; }
-  .eyebrow { @apply text-xs font-black uppercase tracking-[0.28em] text-gold; }
-  .stat-card { @apply flex min-h-48 flex-col justify-between rounded-[2rem] border border-slate-200/80 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20; }
-  .stat-card strong { @apply mt-6 block font-serif text-5xl font-black; }
-  .stat-card span { @apply text-sm leading-6 text-slate-600 dark:text-slate-300; }
-  .chip { @apply rounded-full border border-slate-200 bg-white/60 px-4 py-2 text-sm font-bold transition hover:border-gold dark:border-white/10 dark:bg-white/5; }
-  .chip-active { @apply border-gold bg-gold text-navy; }
-  .timeline-row { @apply mt-4 rounded-2xl border border-slate-200 bg-white/60 p-4 text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200; }
-  .principle { @apply flex min-h-36 flex-col justify-between rounded-[2rem] border border-slate-200/80 bg-white/70 p-6 text-xl font-bold shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20; }
-  .photo-card { @apply overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg dark:border-white/10 dark:bg-white/5; }
-  .photo-gradient { @apply h-64 transition duration-500 hover:scale-105; }
-  .photo-card figcaption { @apply p-5 font-serif text-xl font-bold; }
-  .video-card { @apply relative grid min-h-64 place-items-center overflow-hidden rounded-[2rem] p-6 text-center shadow-xl; }
-  .event-row { @apply grid items-center gap-4 rounded-[2rem] border border-slate-200 bg-white/70 p-5 dark:border-white/10 dark:bg-white/5 md:grid-cols-[auto_auto_1fr_auto_auto]; }
-  .event-row em { @apply not-italic text-slate-500; }
-  .team-card { @apply rounded-[2rem] border border-slate-200/80 bg-white/70 p-5 shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20; }
-  .team-card h3 { @apply mt-4 font-serif text-2xl font-bold; }
-  .team-card strong { @apply mt-1 block text-gold; }
-  .team-card p { @apply mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300; }
-  .doc-card { @apply flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/70 p-4 font-bold transition hover:border-gold dark:border-white/10 dark:bg-white/5; }
-  .field { @apply w-full rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 outline-none transition focus:border-gold focus:ring-4 focus:ring-gold/20 dark:border-white/10 dark:bg-white/10; }
-  .magazine-copy { @apply text-xl leading-9 text-slate-700 dark:text-slate-200; }
-  .magazine-copy p { @apply mb-7; }
-  .dropcap::first-letter { @apply float-left mr-3 font-serif text-8xl font-black leading-[.78] text-gold; }
-  .timeline-editorial { @apply grid items-start gap-5 rounded-[2rem] border border-black/10 bg-white/80 p-6 shadow-xl shadow-black/5 dark:border-white/10 dark:bg-white/[.06] md:grid-cols-[110px_1fr_70px]; }
-  .timeline-editorial b { @apply font-serif text-4xl text-gold; }
-  .timeline-editorial h3 { @apply font-serif text-3xl font-black; }
-  .timeline-editorial p { @apply mt-2 leading-7 text-slate-600 dark:text-slate-300; }
-  .timeline-editorial span { @apply hidden font-serif text-5xl font-black text-black/10 dark:text-white/10 md:block; }
+
+  .glass-card {
+    @apply rounded-[2rem] border border-slate-200/80 bg-white/70 shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20;
+  }
+
+  .gold-btn {
+    @apply inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-bold text-navy shadow-glow transition hover:-translate-y-0.5 hover:brightness-110 focus:outline-none focus:ring-4 focus:ring-gold/30;
+  }
+
+  .ghost-btn {
+    @apply inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white/50 px-6 py-3 text-sm font-bold text-slate-900 transition hover:-translate-y-0.5 hover:border-gold dark:border-white/15 dark:bg-white/5 dark:text-white;
+  }
+
+  .icon-btn {
+    @apply grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white/70 text-slate-900 transition hover:border-gold hover:text-gold dark:border-white/10 dark:bg-white/10 dark:text-white;
+  }
+
+  .eyebrow {
+    @apply text-xs font-black uppercase tracking-[0.28em] text-gold;
+  }
+
+  .stat-card {
+    @apply flex min-h-48 flex-col justify-between rounded-[2rem] border border-slate-200/80 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20;
+  }
+
+  .stat-card strong {
+    @apply mt-6 block font-serif text-5xl font-black;
+  }
+
+  .stat-card span {
+    @apply text-sm leading-6 text-slate-600 dark:text-slate-300;
+  }
+
+  .chip {
+    @apply rounded-full border border-slate-200 bg-white/60 px-4 py-2 text-sm font-bold transition hover:border-gold dark:border-white/10 dark:bg-white/5;
+  }
+
+  .chip-active {
+    @apply border-gold bg-gold text-navy;
+  }
+
+  .timeline-row {
+    @apply mt-4 rounded-2xl border border-slate-200 bg-white/60 p-4 text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200;
+  }
+
+  .principle {
+    @apply flex min-h-36 flex-col justify-between rounded-[2rem] border border-slate-200/80 bg-white/70 p-6 text-xl font-bold shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20;
+  }
+
+  .photo-card {
+    @apply overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg dark:border-white/10 dark:bg-white/5;
+  }
+
+  .photo-gradient {
+    @apply h-64 transition duration-500 hover:scale-105;
+  }
+
+  .photo-card figcaption {
+    @apply p-5 font-serif text-xl font-bold;
+  }
+
+  .video-card {
+    @apply relative grid min-h-64 place-items-center overflow-hidden rounded-[2rem] p-6 text-center shadow-xl;
+  }
+
+  .event-row {
+    @apply grid items-center gap-4 rounded-[2rem] border border-slate-200 bg-white/70 p-5 dark:border-white/10 dark:bg-white/5 md:grid-cols-[auto_auto_1fr_auto_auto];
+  }
+
+  .event-row em {
+    @apply not-italic text-slate-500;
+  }
+
+  .team-card {
+    @apply rounded-[2rem] border border-slate-200/80 bg-white/70 p-5 shadow-xl shadow-slate-900/5 backdrop-blur-2xl dark:border-white/10 dark:bg-white/[.06] dark:shadow-black/20;
+  }
+
+  .team-card h3 {
+    @apply mt-4 font-serif text-2xl font-bold;
+  }
+
+  .team-card strong {
+    @apply mt-1 block text-gold;
+  }
+
+  .team-card p {
+    @apply mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300;
+  }
+
+  .doc-card {
+    @apply flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/70 p-4 font-bold transition hover:border-gold dark:border-white/10 dark:bg-white/5;
+  }
+
+  .field {
+    @apply w-full rounded-2xl border border-slate-200 bg-white/80 px-4 py-3 outline-none transition focus:border-gold focus:ring-4 focus:ring-gold/20 dark:border-white/10 dark:bg-white/10;
+  }
+
+  .magazine-copy {
+    @apply text-xl leading-9 text-slate-700 dark:text-slate-200;
+  }
+
+  .magazine-copy p {
+    @apply mb-7;
+  }
+
+  .dropcap::first-letter {
+    @apply float-left mr-3 font-serif text-8xl font-black leading-[.78] text-gold;
+  }
+
+  .timeline-editorial {
+    @apply grid items-start gap-5 rounded-[2rem] border border-black/10 bg-white/80 p-6 shadow-xl shadow-black/5 dark:border-white/10 dark:bg-white/[.06] md:grid-cols-[110px_1fr_70px];
+  }
+
+  .timeline-editorial b {
+    @apply font-serif text-4xl text-gold;
+  }
+
+  .timeline-editorial h3 {
+    @apply font-serif text-3xl font-black;
+  }
+
+  .timeline-editorial p {
+    @apply mt-2 leading-7 text-slate-600 dark:text-slate-300;
+  }
+
+  .timeline-editorial span {
+    @apply hidden font-serif text-5xl font-black text-black/10 dark:text-white/10 md:block;
+  }
 }

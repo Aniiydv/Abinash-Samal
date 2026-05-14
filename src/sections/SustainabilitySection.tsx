@@ -14,7 +14,7 @@ export function SustainabilitySection() {
       <div className="relative mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[.95fr_1.05fr] lg:px-8">
         <Reveal>
           <img
-            src="/images/empreo-sustainable-mobility.png"
+            src="/images/empreo-sustainable-mobility.webp"
             alt="Sustainable mobility infrastructure"
             className="h-full min-h-96 rounded-[2rem] object-cover shadow-2xl"
           />

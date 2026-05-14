@@ -1,7 +1,7 @@
 import { Building2, Car, IndianRupee, MapPin, Users, Wrench } from 'lucide-react'
 import type { Feature, Metric, Principle } from '../types'
 
-export const navItems = ['Profile', 'Companies', 'Vision', 'Awards', 'Office']
+export const navItems = ['Profile', 'Companies', 'Vision', 'Awards','Gallery', 'Office']
 
 export const features: Feature[] = [
   {
@@ -156,21 +156,21 @@ export const companyLinks = [
 
 export const GALLERY_IMAGES = [
   // { src: "/images/gallery-1.jpeg", caption: "Grand opening of Empreo Prestige showroom", category: "Events" },
-  { src: "/images/KIA.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
-   { src: "/images/LR.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
-    { src: "/images/MG.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
+  { src: "/images/KIA.webp", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
+   { src: "/images/LR.webp", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
+    { src: "/images/MG.webp", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
     //  { src: "/images/SKODA.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
-      { src: "/images/SKODA_SHOWROOM.png", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
-       { src: "/images/TATA.png", caption: "Luxury vehicle display", category: "Showroom" },
-  { src: "/images/tata 3.png", caption: "Empreo Group team at annual meet", category: "Team" },
+      { src: "/images/SKODA_SHOWROOM.webp", caption: "Premium showroom interior, Bhubaneswar", category: "Showroom" },
+       { src: "/images/TATA.webp", caption: "Luxury vehicle display", category: "Showroom" },
+  { src: "/images/tata 3.webp", caption: "Empreo Group team at annual meet", category: "Team" },
   // { src: "/images/gallery-4.jpeg", caption: "RVSF facility, Khurda — sustainable recycling", category: "Sustainability" },
   //  { src: "/images/gallery-4.jpeg", caption: "Featured by Outlook Magazine: A Visionary Driving Sustainable Transformation", category: "Sustainability" },
   // { src: "/images/gallery-5.png", caption: "Outlook Magazine Highlights Dr. Abinash Samal’s Journey of Sustainable Growth", category: "Sustainability" },
   // { src: "/images/gallery-6.jpeg", caption: "Keynote at Odisha Mobility Summit", category: "Events" },
-  { src: "/images/KIA SERVICE.png", caption: "State-of-the-art service bay", category: "Service" },
-  { src: "/images/MG WORKSHOP.png", caption: "State-of-the-art service bay", category: "Service" },
-  { src: "/images/C9888T01.png", caption: "State-of-the-art service bay", category: "Service" },
-  { src: "/images/C9944T01.png", caption: "State-of-the-art service bay", category: "Service" },
+  { src: "/images/KIA SERVICE.webp", caption: "State-of-the-art service bay", category: "Service" },
+  { src: "/images/MG WORKSHOP.webp", caption: "State-of-the-art service bay", category: "Service" },
+  { src: "/images/C9888T01.webp", caption: "State-of-the-art service bay", category: "Service" },
+  { src: "/images/C9944T01.webp", caption: "State-of-the-art service bay", category: "Service" },
  
   // { src: "/images/empreo-sustainable-mobility.png", caption: "Green mobility vision", category: "Sustainability" },
 ]
@@ -181,7 +181,7 @@ export const MAGAZINES = [
     title: "Outlook India",
     issue: "March 2025",
     headline: "A Catalyst for Sustainable Change",
-    cover: "/images/magazine-1.jpeg",
+    cover: "/images/magazine-1.webp",
     excerpt: "How Dr. Abinash Samal built a ₹3,800 crore automotive empire across 20 districts of Odisha, redefining customer experience and setting new benchmarks in luxury mobility.",
     pages: 1,
     featured: true,
