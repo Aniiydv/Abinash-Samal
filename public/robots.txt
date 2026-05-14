@@ -1,12 +1,12 @@
 User-agent: *
 Allow: /
+
 Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
 
-Sitemap: https://drabinashsamal.com/sitemap.xml
+Sitemap: https://abinashsamal.com/sitemap.xml
 
-# Crawl-delay for heavy crawlers
 User-agent: AhrefsBot
 Crawl-delay: 2
 
