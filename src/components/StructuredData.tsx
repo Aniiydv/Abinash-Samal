@@ -1,43 +1,107 @@
+// export function PersonSchema() {
+//   const schema = {
+//     "@context": "https://schema.org",
+//     "@type": "Person",
+//     name: "Dr. Abinash Samal",
+//     jobTitle: "Managing Director",
+//     worksFor: {
+//       "@type": "Organization",
+//       name: "Empreo Group",
+//       url: "https://www.empreogroup.in/",
+//       logo: "https://drabinashsamal.com/og-image.png",
+//       sameAs: [
+//         "https://www.empreogroup.in/",
+//         "https://empreoskoda.com/",
+//       ],
+//     },
+//     description:
+//       "Managing Director of Empreo Group, one of Odisha's leading automotive and mobility conglomerates with 50+ branches across 20 districts.",
+//     url: "https://drabinashsamal.com",
+//     image: "https://drabinashsamal.com/images/dr-abinash-samal-editorial.png",
+//     knowsAbout: [
+//       "Automotive Business",
+//       "Luxury Mobility",
+//       "Sustainability",
+//       "EV & Green Mobility",
+//       "Business Leadership",
+//       "Odisha",
+//     ],
+//     alumniOf: {
+//       "@type": "EducationalOrganization",
+//       name: "Doctorate in Business Administration",
+//     },
+//     award: [
+//       "Odisha Mobility Leadership Recognition 2025",
+//       "Green Mobility Initiative Citation 2024",
+//       "People-First Enterprise Appreciation 2023",
+//     ],
+//     sameAs: [
+//       "https://www.linkedin.com/in/drabinashsamal",
+//       "https://twitter.com/drabinashsamal",
+//     ],
+//   };
+
+//   return (
+//     <script
+//       type="application/ld+json"
+//       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+//     />
+//   );
+// }
 export function PersonSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Dr. Abinash Samal",
+
+    name: "Abinash Samal",
+
+    alternateName: [
+      "Dr. Abinash Samal",
+      "Dr Abinash Samal"
+    ],
+
+    url: "https://abinashsamal.com",
+
+    image:
+      "https://drabinashsamal.com/images/dr-abinash-samal-editorial.png",
+
+    description:
+      "Abinash Samal, also known as Dr. Abinash Samal, is the Managing Director of Empreo Group, one of Odisha's leading automotive and mobility conglomerates.",
+
     jobTitle: "Managing Director",
+
+    nationality: {
+      "@type": "Country",
+      name: "India",
+    },
+
+    address: {
+      "@type": "PostalAddress",
+      addressRegion: "Odisha",
+      addressCountry: "India",
+    },
+
     worksFor: {
       "@type": "Organization",
       name: "Empreo Group",
       url: "https://www.empreogroup.in/",
-      logo: "https://drabinashsamal.com/og-image.png",
-      sameAs: [
-        "https://www.empreogroup.in/",
-        "https://empreoskoda.com/",
-      ],
+      logo: "https://abinashsamal.com/og-image.png",
     },
-    description:
-      "Managing Director of Empreo Group, one of Odisha's leading automotive and mobility conglomerates with 50+ branches across 20 districts.",
-    url: "https://drabinashsamal.com",
-    image: "https://drabinashsamal.com/images/dr-abinash-samal-editorial.png",
+
     knowsAbout: [
       "Automotive Business",
       "Luxury Mobility",
+      "Electric Vehicles",
       "Sustainability",
-      "EV & Green Mobility",
       "Business Leadership",
-      "Odisha",
+      "Odisha Business",
     ],
-    alumniOf: {
-      "@type": "EducationalOrganization",
-      name: "Doctorate in Business Administration",
-    },
-    award: [
-      "Odisha Mobility Leadership Recognition 2025",
-      "Green Mobility Initiative Citation 2024",
-      "People-First Enterprise Appreciation 2023",
-    ],
+
     sameAs: [
       "https://www.linkedin.com/in/drabinashsamal",
       "https://twitter.com/drabinashsamal",
+      "https://www.empreogroup.in/",
+      "https://empreoskoda.com/"
     ],
   };
 
@@ -48,7 +112,6 @@ export function PersonSchema() {
     />
   );
 }
-
 export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
