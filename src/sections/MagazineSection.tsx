@@ -63,55 +63,24 @@ function MagazineDetail({
           {/* Main article */}
           <div>
             <div className="magazine-copy">
-              <p className="dropcap">
-                Dr Abinash Samal is an entrepreneur, innovator, and social reformer whose work reflects a deep commitment to sustainable industrial development and inclusive social progress. As the founder of the Empreo Group, he has built a diversified enterprise focused on infrastructure, transportation, manufacturing, recycling, and community development.
+          <p className="dropcap">
+            {magazine.article.intro}
+          </p>
 
-With a unique professional journey that began in medicine, Dr. Samal transitioned into entrepreneurship with a vision of creating industries that combine economic growth with social responsibility. His leadership philosophy is rooted in sustainability, innovation, and long-term impact.
-              </p>
-              <p>
-                Under Dr. Abinash Samal's stewardship, the Group has not only
-                expanded its footprint to over 50 branches across 20 districts
-                but has also redefined what it means to deliver a premium
-                customer experience in India's rapidly evolving automotive
-                landscape. The feature explores how the phygital approach —
-                blending physical dealership excellence with digital innovation
-                — has become a cornerstone of the Group's growth strategy.
-              </p>
-              <p>
-                The article further examines Dr. Samal's commitment to
-                sustainability through the establishment of Odisha's first
-                eco-friendly Registered Vehicle Scrapping Facility in Khurda,
-                and his forward-looking advocacy for EV, CNG, LNG, and hydrogen
-                mobility solutions. His people-first philosophy, which includes
-                comprehensive employee welfare programs, mediclaim support, and
-                scholarships for employees' children, is highlighted as a model
-                for modern business leadership.
-              </p>
-              <blockquote className="my-10 border-y border-gold/50 py-8">
-                <p className="font-serif text-3xl font-black leading-tight md:text-4xl">
-                  "Every milestone we’ve achieved is a testament to our journey, our people, and your unwavering trust in Empreo Group. -
-"
-                </p>
-                <p className="mt-4 text-slate-500 dark:text-slate-400">
-                  — Dr. Abinash Samal, as quoted in {magazine.title}
-                </p>
-              </blockquote>
-              <p>
-                The feature also covers Empreo Group's partnerships with premium
-                brands including Jaguar Land Rover, MG, Tata Passenger Vehicles,
-                Škoda, Kia, and JCB — demonstrating the breadth of the Group's
-                automotive portfolio and its ability to cater to diverse
-                customer segments across Odisha.
-              </p>
-              <p>
-                Industry analysts quoted in the piece credit Dr. Samal's ability
-                to balance aggressive expansion with sustainable practices as a
-                key differentiator in a competitive market. With a turnover of
-                ₹3,800 crore and a team of over 2,000 professionals, Empreo
-                Group continues to set benchmarks for automotive retail
-                excellence in Eastern India.
-              </p>
-            </div>
+          {magazine.article.paragraphs.map((para, index) => (
+            <p key={index}>{para}</p>
+          ))}
+
+          <blockquote className="my-10 border-y border-gold/50 py-8">
+            <p className="font-serif text-3xl font-black leading-tight md:text-4xl">
+              "{magazine.article.quote}"
+            </p>
+
+            <p className="mt-4 text-slate-500 dark:text-slate-400">
+              — Dr. Abinash Samal, as quoted in {magazine.title}
+            </p>
+          </blockquote>
+        </div>
 
             <div className="mt-10 flex flex-wrap gap-3">
               <button className="ghost-btn">

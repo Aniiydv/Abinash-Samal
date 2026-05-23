@@ -7,18 +7,18 @@ import {
 import { motion } from "framer-motion";
 
 const socials = [
-  // { icon: Linkedin, link: "https://www.instagram.com/abinash___samal" },
+   { icon: Linkedin, link: "https://www.linkedin.com/in/abinash-samal-07435740a" },
   { icon: Instagram, link: "https://www.instagram.com/abinash___samal" },
   { icon: Facebook, link: "https://www.facebook.com/share/17dgDzuaoP/?mibextid=wwXIfr" },
 ];
 
 const brands = [
-  { name: 'Skoda', logo: '/images/skoda.webp' },
-  { name: 'MG', logo: '/images/mglogo.webp' },
-  { name: 'Land Rover', logo: '/images/land-rover.webp' },
-  { name: 'Kia', logo: '/images/kialogo.webp' },
-  { name: 'Tata Motors', logo: '/images/tatacomricial.webp' },
-  { name: 'JCB', logo: '/images/jcb.webp' },
+  { name: 'Skoda', logo: '/images/skoda.webp',website: 'https://empreoskoda.com/'},
+  { name: 'MG', logo: '/images/mglogo.webp',website: 'https://dealers.mgmotor.co.in/mg-motor-empreo-wheel-showroom-car-dealer-pahala-bhubaneswar-371840/Contact-Us' },
+  { name: 'Land Rover', logo: '/images/land-rover.webp',website: 'https://retailers.landrover.in/empreo-prestige' },
+  { name: 'Kia', logo: '/images/kialogo.webp',website: 'https://kiaindia-dealers.com/kia-car-showroom-empreo-kia-dlf-cyber-city-patia-empreo-kia-car-dealer-patia-bhubaneswar-431479/Contact-Us' },
+  { name: 'Tata Motors', logo: '/images/tatacomricial.webp',website: 'https://www.tatamotors-shreekhetraautomotives-pahala-bhb.com/' },
+  { name: 'JCB', logo: '/images/jcb.webp',website: 'https://www.jcb.com/' },
 ]
 
 export function ContactSection() {
@@ -65,45 +65,40 @@ export function ContactSection() {
           </div>
 
           {/* ================= BRANDS LOGO GRID ================= */}
-          <div className="mt-16 border-t border-white/10 pt-10">
 
-            <p className="text-xs uppercase tracking-[0.3em] text-white/40">
-              Owned Brands
-            </p>
+          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
+                          {brands.map((brand, i) => (
+                            <a
+                              key={i}
+                              href={brand.website}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block"
+                            >
+                              <motion.div
+                                whileHover={{ scale: 1.08 }}
+                                className="group relative flex h-32 cursor-pointer items-center justify-center overflow-hidden rounded-3xl border border-gray-200 bg-white p-8 transition-all duration-500 hover:border-[#D4AF37] hover:shadow-[0_0_25px_rgba(212,175,55,0.15)]"
+                              >
+                                {/* glow effect */}
+                                <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-gradient-to-r from-[#D4AF37]/10 via-transparent to-[#D4AF37]/10" />
 
-            <h3 className="mt-4 text-2xl font-bold">
-              Business Ecosystem
-            </h3>
+                                <img
+                                  src={brand.logo}
+                                  alt={brand.name}
+                                  onError={(e) => {
+                                    e.currentTarget.src =
+                                      'https://via.placeholder.com/120x40?text=' + brand.name
+                                  }}
+                                  className="max-h-10 w-auto object-contain transition duration-300 group-hover:scale-105"
+                                />
 
-            <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
-
-             {brands.map((brand, i) => (
-                    <motion.div
-                        key={i}
-                        whileHover={{ scale: 1.08 }}
-                       className="group relative flex h-32 items-center justify-center overflow-hidden rounded-3xl border border-gray-200 bg-white p-8 transition-all duration-500 hover:border-[#D4AF37] hover:shadow-[0_0_25px_rgba(212,175,55,0.15)]"
-                      >
-                        {/* glow effect */}
-                        <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-gradient-to-r from-[#D4AF37]/10 via-transparent to-[#D4AF37]/10" />
-
-                        <img
-                            src={brand.logo}
-                            alt={brand.name}
-                            onError={(e) => {
-                              e.currentTarget.src =
-                                "https://via.placeholder.com/120x40?text=" + brand.name
-                            }}
-                           className="max-h-10 w-auto object-contain transition duration-300 group-hover:scale-105"
-                          />
-
-                        {/* subtle border glow ring */}
-                        <div className="absolute inset-0 rounded-3xl opacity-0 transition duration-500 group-hover:opacity-100 ring-1 ring-[#D4AF37]/30" />
-                      </motion.div>
-                  ))}
-
-            </div>
-          </div>
-        </div>
+                                {/* subtle border glow ring */}
+                                <div className="absolute inset-0 rounded-3xl opacity-0 transition duration-500 group-hover:opacity-100 ring-1 ring-[#D4AF37]/30" />
+                              </motion.div>
+                            </a>
+                          ))}
+                        </div>
+          </div> 
 
         {/* ================= RIGHT SIDE MAP ================= */}
       <div className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/5 backdrop-blur-xl">

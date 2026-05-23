@@ -21,6 +21,7 @@
     name="keywords"
     content="
     Abinash Samal,
+     Abhinash Samal,
     Dr Abinash Samal,
     Dr. Abinash Samal,
     Abinash Samal Odisha,
@@ -94,31 +95,166 @@
     name="twitter:image"
     content="https://abinashsamal.com/og-image.jpg"
   />
+<!-- SECURITY HEADERS -->
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Prevent MIME sniffing -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+<!-- Prevent clickjacking -->
+<meta http-equiv="X-Frame-Options" content="DENY" />
+
+<!-- Referrer policy -->
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<!-- Permissions Policy -->
+<meta
+  http-equiv="Permissions-Policy"
+  content="
+    camera=(),
+    microphone=(),
+    geolocation=(),
+    payment=(),
+    usb=()
+  "
+/>
+
+<!-- Content Security Policy -->
+<meta
+  http-equiv="Content-Security-Policy"
+  content="
+    default-src 'self';
+    img-src 'self' https: data:;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com data:;
+    connect-src 'self' https:;
+    frame-src https://www.google.com;
+  "
+/>
+
+<!-- APPLE -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!-- MOBILE -->
+<meta name="format-detection" content="telephone=no" />
+
+<!-- LANGUAGE -->
+<meta http-equiv="content-language" content="en" />
+
+<!-- GEO -->
+<meta name="geo.region" content="IN-OR" />
+<meta name="geo.placename" content="Bhubaneswar, Odisha" />
+
+<!-- EXTRA SEO -->
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+
+<!-- SOCIAL -->
+<meta property="og:site_name" content="Abinash Samal" />
+<meta property="og:locale" content="en_IN" />
+
+<!-- TWITTER -->
+<meta name="twitter:creator" content="@abinashsamal" />
+
+<!-- PRELOAD HERO IMAGE -->
+<link
+  rel="preload"
+  as="image"
+  href="/og-image.jpg"
+/>
+
+<!-- DNS PREFETCH -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
   <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dr. Abinash Samal",
-    "alternateName": [
-      "Abinash Samal",
-      "Dr Abinash Samal"
-    ],
-    "url": "https://abinashsamal.com",
-    "image": "https://abinashsamal.com/og-image.jpg",
-    "jobTitle": "Business Leader",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Empreo Group"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Person",
+      "@id": "https://abinashsamal.com/#person",
+
+      "name": "Dr. Abinash Samal",
+
+      "alternateName": [
+        "Abinash Samal",
+        "Abhinash Samal",
+        "Dr Abinash Samal"
+      ],
+
+      "url": "https://abinashsamal.com",
+
+      "image": "https://abinashsamal.com/og-image.jpg",
+
+      "description":
+        "Dr. Abinash Samal is an entrepreneur, business leader, and founder of Empreo Group Odisha.",
+
+      "jobTitle": "Chairman & Entrepreneur",
+
+      "nationality": "Indian",
+
+      "sameAs": [
+        "https://www.linkedin.com/in/abinash-samal-07435740a",
+        "https://www.facebook.com/abinash.samal.279795",
+        "https://www.instagram.com/abinash___samal"
+      ],
+
+      "worksFor": {
+        "@id": "https://abinashsamal.com/#organization"
+      }
     },
-    "sameAs": [
-      "https://www.linkedin.com/",
-      "https://www.facebook.com/",
-      "https://www.instagram.com/"
-    ]
-  }
-  </script>
+
+    {
+      "@type": "Organization",
+
+      "@id": "https://abinashsamal.com/#organization",
+
+      "name": "Empreo Group",
+
+      "url": "https://abinashsamal.com",
+
+      "logo": "https://abinashsamal.com/og-image.jpg",
+
+      "description":
+        "Empreo Group is a diversified enterprise operating across automotive, infrastructure, sustainability, transportation, and mobility sectors in Odisha, India.",
+
+      "founder": {
+        "@id": "https://abinashsamal.com/#person"
+      },
+
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bhubaneswar",
+        "addressRegion": "Odisha",
+        "addressCountry": "India"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+
+      "@id": "https://abinashsamal.com/#website",
+
+      "url": "https://abinashsamal.com",
+
+      "name": "Abinash Samal Official Website",
+
+      "publisher": {
+        "@id": "https://abinashsamal.com/#organization"
+      },
+
+      "inLanguage": "en"
+    }
+
+  ]
+}
+</script>
+
 
 </head>
 

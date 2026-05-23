@@ -117,11 +117,11 @@ export const newsItems = [
     title: '“Featured in Outlook Magazine’s Visionaries of the $5 Trillion Economy”',
     summary: 'Dr Abinash Samal was recognized for his leadership in sustainable development, industrial innovation, and social impact through the Empreo Group, contributing to inclusive growth and nation-building initiatives.',
   },
-  // {
-  //   date: 'January 2026',
-  //   title: 'Empreo Group expands future mobility conversations across Odisha',
-  //   summary: 'The Group continues to prepare for EV, CNG, LNG, Hydrogen mobility solutions, and cleaner diesel technologies through DEF adoption.',
-  // },
+  {
+    date: 'Septembar 2025',
+    title: '“Featured in Fortune India for leadership and business growth initiatives.”',
+    summary: 'Featured in leading business publication Fortune India for entrepreneurial leadership, business expansion, and contribution to the automotive and enterprise ecosystem through the Empreo Group.',
+  },
   // {
   //   date: 'November 2025',
   //   title: 'Office of Dr. Samal highlights employee welfare and education initiatives',
@@ -175,45 +175,105 @@ export const GALLERY_IMAGES = [
   // { src: "/images/empreo-sustainable-mobility.png", caption: "Green mobility vision", category: "Sustainability" },
 ]
 
+
 export const MAGAZINES = [
   {
-    id: "forbes-india-2025",
+    id: "outlook-india-2025",
     title: "Outlook India",
     issue: "March 2025",
     headline: "A Catalyst for Sustainable Change",
     cover: "/images/magazine-1.webp",
-    excerpt: "How Dr. Abinash Samal built a ₹3,800 crore automotive empire across 20 districts of Odisha, redefining customer experience and setting new benchmarks in luxury mobility.",
+    excerpt:
+      "How Dr. Abinash Samal built a ₹3,800 crore automotive empire...",
     pages: 1,
     featured: true,
+
+    article: {
+      intro:
+        "Dr Abinash Samal is an entrepreneur, innovator, and social reformer focused on sustainable industrial development and inclusive social progress.",
+
+      paragraphs: [
+        "Under Dr. Samal's leadership, Empreo Group expanded rapidly across Odisha with a strong focus on infrastructure, transportation, and automotive excellence.",
+
+        "The article explores his people-first leadership philosophy, premium customer experience, and sustainable business vision.",
+
+        "It also highlights Empreo Group’s growth across multiple sectors while maintaining strong social responsibility initiatives.",
+      ],
+
+      quote:
+        "Every milestone we’ve achieved is a testament to our journey, our people, and your unwavering trust in Empreo Group.",
+    },
   },
-  // {
-  //   id: "business-today-2024",
-  //   title: "Business Today",
-  //   issue: "December 2024",
-  //   headline: "Driving Change: The Phygital Dealership",
-  //   cover: "/images/magazine-2.png",
-  //   excerpt: "An in-depth look at how Empreo Group's phygital approach is bridging physical showroom confidence with digital convenience across India's emerging automotive markets.",
-  //   pages: 3,
-  //   featured: true,
-  // },
-  // {
-  //   id: "entrepreneur-india-2024",
-  //   title: "Entrepreneur India",
-  //   issue: "August 2024",
-  //   headline: "Green Wheels: Sustainability in Auto Retail",
-  //   cover: "/images/magazine-3.png",
-  //   excerpt: "Dr. Samal's pioneering RVSF initiative and his roadmap for EV, CNG, LNG and hydrogen adoption is shaping the future of responsible mobility in Eastern India.",
-  //   pages: 3,
-  //   featured: false,
-  // },
-  // {
-  //   id: "india-today-2023",
-  //   title: "India Today",
-  //   issue: "November 2023",
-  //   headline: "People First: Building a 2,000-Strong Family",
-  //   cover: "/images/magazine-4.png",
-  //   excerpt: "From mediclaim to scholarships, cultural programs to skill development — how Empreo Group's employee welfare model is creating a blueprint for people-centric business leadership.",
-  //   pages: 2,
-  //   featured: false,
-  // },
-]
+
+  {
+    id: "fortune-india-2025",
+    title: "Fortune India",
+    issue: "September 2025",
+    headline:
+      "Leadership in Motion – Steering the Empreo Group Juggernaut",
+    cover: "/images/magazine-2.webp",
+    excerpt:
+      "Featured in Fortune India for entrepreneurial excellence and leadership in the automotive and business sectors.",
+    pages: 1,
+    featured: true,
+
+    article: {
+      intro:
+        "Featured in Fortune India, Dr. Abinash Samal was recognized for visionary leadership and strategic expansion of the Empreo Group ecosystem.",
+
+      paragraphs: [
+        "The feature highlighted Empreo Group’s strong presence in the automotive sector through partnerships with Jaguar Land Rover, MG, Kia, Škoda, Tata Motors, and JCB.",
+
+        "The article also focused on innovation, sustainable mobility, and the company’s expansion across Odisha and Eastern India.",
+
+        "Fortune India recognized Dr. Samal’s ability to combine aggressive growth with social responsibility and long-term sustainability.",
+      ],
+
+      quote:
+        "Leadership is about creating opportunities, empowering people, and building a future that drives meaningful impact.",
+    },
+  },
+];
+
+// export const MAGAZINES = [
+//   {
+//     id: "forbes-india-2025",
+//     title: "Outlook India",
+//     issue: "March 2025",
+//     headline: "A Catalyst for Sustainable Change",
+//     cover: "/images/magazine-1.webp",
+//     excerpt: "How Dr. Abinash Samal built a ₹3,800 crore automotive empire across 20 districts of Odisha, redefining customer experience and setting new benchmarks in luxury mobility.",
+//     pages: 1,
+//     featured: true,
+//   },
+//   {
+//     id: "business-today-2024",
+//     title: "Fortune India",
+//     issue: "September 2025",
+//     headline: "“Leadership in Motion – Steering the Empreo Group Juggernaut.”",
+//     cover: "/images/magazine-2.webp",
+//     excerpt: "Featured in Fortune India for entrepreneurial excellence and leadership in the automotive and business sectors. The feature highlighted strategic expansion, ecosystem development, and visionary leadership behind the growth of the Empreo Group.",
+//     pages: 1,
+//     featured: true,
+//   },
+//   // {
+//   //   id: "entrepreneur-india-2024",
+//   //   title: "Entrepreneur India",
+//   //   issue: "August 2024",
+//   //   headline: "Green Wheels: Sustainability in Auto Retail",
+//   //   cover: "/images/magazine-3.png",
+//   //   excerpt: "Dr. Samal's pioneering RVSF initiative and his roadmap for EV, CNG, LNG and hydrogen adoption is shaping the future of responsible mobility in Eastern India.",
+//   //   pages: 3,
+//   //   featured: false,
+//   // },
+//   // {
+//   //   id: "india-today-2023",
+//   //   title: "India Today",
+//   //   issue: "November 2023",
+//   //   headline: "People First: Building a 2,000-Strong Family",
+//   //   cover: "/images/magazine-4.png",
+//   //   excerpt: "From mediclaim to scholarships, cultural programs to skill development — how Empreo Group's employee welfare model is creating a blueprint for people-centric business leadership.",
+//   //   pages: 2,
+//   //   featured: false,
+//   // },
+// ]
